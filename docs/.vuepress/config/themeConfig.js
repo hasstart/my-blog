@@ -124,6 +124,6 @@ module.exports = {
     // 页脚信息
     createYear: 2021, // 博客创建年份
     copyrightInfo:
-      'Ma Song Song | <a href="https://github.com/zhouyalongs" target="_blank">MIT License</a>', // 博客版权信息，支持a标签
+      'Zhouyalong | <a href="https://github.com/zhouyalongs" target="_blank">MIT License</a>', // 博客版权信息，支持a标签
   }
 }
