@@ -1,9 +1,9 @@
 {
-  "name": "mss-blog",
+  "name": "zhouyalong-blog",
   "version": "1.0.0",
-  "description": "马松松的博客",
+  "description": "周亚龙的博客",
   "author": {
-    "name": "masongsong"
+    "name": "zhouyalong"
   },
   "dependencies": {
     "@better-scroll/core": "^2.0.0-beta.6",

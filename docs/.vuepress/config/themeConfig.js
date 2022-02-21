@@ -6,43 +6,46 @@ module.exports = {
       text: '页面杂谈',
       link: '/pages/7f4764/',
       items: [
-        { text: 'HTML', link: '/pages/1403bc/' },
-        { text: 'CSS', link: '/pages/6d9467/' },
-        { text: 'JavaScript', link: '/pages/5a05fb/' },
-        { text: 'TypeScript', link: '/pages/6e1f80/' },
+        { text: 'HTML', link: '/pages/e42f0c/' },
+        { text: 'CSS', link: '/pages/ef83a2/' },
+        { text: 'JavaScript', link: '/pages/c13c31/' },
+        { text: 'TypeScript', link: '/pages/76f4b0/' },
       ],
     },
     {
-      text: '三大框架',
+      text: '框架',
       link: '/pages/a787e4/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
       items: [
         // 说明：以下所有link的值只是在相应md文件定义的永久链接（不是什么特殊生成的编码）。另外，注意结尾是有斜杠的
         {text: 'Vue', link: '/pages/bb33b9/'},
         {text: 'React', link: '/pages/ddcd99/' },
-        {text: 'Angular',link: '/pages/javascript4/' }
-          // items: [
-          //   { text: '《TypeScript》学习笔记', link: '/note/typescript/' },
-          //   { text: '《JavaScript高程4》学习笔记', link: '/note/javascript4/' }
-          // ],
-
+        // {text: 'Angular',link: '/pages/javascript4/' }
       ],
     },
     {
       text: '前端延展',
-      link: '/read/',
+      link: '/pages/a9e92d',
       items: [
-        { text: '前端安全', link: '/pages/511ed7/' },
-        { text: '小程序', link: '/pages/44e592/' },
-        { text: '混合App', link: '/pages/b79286/' },
+        { text: '前端安全', link: '/pages/d1fdc6/' },
+        { text: '微信相关', link: '/pages/c926f9/' },
+        // { text: '混合App', link: '/pages/686027/' },
+        { text: 'Webpack', link: '/pages/b79286/' },
+        { text: 'Node', link: '/pages/dcb6ce/' },
       ],
     },
-    { text: '算法', link: '/archives/'},
-    { text: '学习笔记', link: '/about/' }
+    {
+      text: '算法',
+      link: '/pages/e46525/',
+    },
+    {
+      text: '闲暇之余',
+      link: '/pages/fcc60b/'
+    }
   ],
   smoothScroll: true,
   sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
   logo: '/img/logo.png', // 导航栏logo
-  repo: 'https://github.com/MssText/MssText.github.io', // 导航栏右侧生成Github链接
+  repo: 'https://github.com/zhouyalongs/zhouyalongs.github.io', // 导航栏右侧生成Github链接
   searchMaxSuggestions: 10, // 搜索结果显示最大数
   lastUpdated: '上次更新', // 开启更新时间，并配置前缀文字   string | boolean (取值为git提交时间)
   docsDir: 'docs', // 编辑的文件夹
@@ -87,13 +90,13 @@ module.exports = {
 
   author: {
     // 文章默认的作者信息，可在md文件中单独配置此信息 String | {name: String, link: String}
-    name: 'masongsong', // 必需
-    link: 'https://github.com/MssText', // 可选的
+    name: 'zhouyalong', // 必需
+    link: 'https://github.com/zhouyalongs', // 可选的
   },
   blogger: {
     // 博主信息，显示在首页侧边栏
     avatar: 'https://cdn.jsdelivr.net/gh/MssText/learn@master/images/49203535.35emn5vryma0.png',
-    name: 'masongsong',
+    name: 'zhouyalong',
     slogan: '会当凌绝顶,一览众山小',
   },
   social: {
@@ -103,12 +106,12 @@ module.exports = {
       {
         iconClass: 'icon-youjian',
         title: '发邮件',
-        link: 'mailto:2698745548@qq.com',
+        link: 'mailto:15515533605@163.com',
       },
       {
         iconClass: 'icon-github',
         title: 'GitHub',
-        link: 'https://github.com/MssText',
+        link: 'https://github.com/zhouyalongs',
       },
       {
         iconClass: 'icon-erji',
@@ -121,6 +124,6 @@ module.exports = {
     // 页脚信息
     createYear: 2021, // 博客创建年份
     copyrightInfo:
-      'Ma Song Song | <a href="https://github.com/MssText" target="_blank">MIT License</a>', // 博客版权信息，支持a标签
+      'Ma Song Song | <a href="https://github.com/zhouyalongs" target="_blank">MIT License</a>', // 博客版权信息，支持a标签
   }
 }

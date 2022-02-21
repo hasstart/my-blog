@@ -37,7 +37,7 @@ module.exports = [
         },
         {
           title: '通过百度搜索本站的',
-          frontUrl: 'https://www.baidu.com/s?wd=site%3Amasongsong.cn%20',
+          frontUrl: 'https://www.baidu.com/s?wd=site%zhouyalong.cn%20',
         },
       ],
     },
@@ -48,7 +48,7 @@ module.exports = [
     {
       // 代码块复制按钮
       copySelector: ['div[class*="language-"] pre', 'div[class*="aside-code"] aside'], // String or Array
-      copyMessage: '宁复制了代码，记得标明出处哦！', // default is 'Copy successfully and then paste it for use.'
+      copyMessage: '您复制了代码，记得标明出处哦！', // default is 'Copy successfully and then paste it for use.'
       duration: 1000, // prompt message display time.
       showInMobile: false, // whether to display on the mobile side, default: false.
     },
@@ -90,8 +90,8 @@ module.exports = [
         clientID: '5275ba125b0f574a7517',
         clientSecret: 'c704bb535fa7a0f1612cd7f95d0f732043560532',
         repo: 'blog-gitalk-comment', // GitHub 仓库
-        owner: 'MssText', // GitHub仓库所有者
-        admin: ['MssText'], // 对仓库有写权限的人
+        owner: 'zhouyalong', // GitHub仓库所有者
+        admin: ['zhouyalong'], // 对仓库有写权限的人
         // distractionFreeMode: true,
         pagerDirection: 'last', // 'first'正序 | 'last'倒序
         id: '<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>', //  页面的唯一标识,长度不能超过50

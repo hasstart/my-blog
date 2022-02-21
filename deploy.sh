@@ -10,15 +10,15 @@ npm run build
 cd docs/.vuepress/dist
 
 # deploy to github
-echo 'masongsong.cn' > CNAME
+echo 'zhouyalong.com' > CNAME
 if [ -z "$GITHUB_TOKEN" ]; then
   msg='deploy'
-  githubUrl=git@github.com:MssText/MssText.github.io.git
+  githubUrl=git@github.com:zhouyalongs/zhouyalongs.github.io.git
 else
   msg='来自github actions的自动部署'
-  githubUrl=https://MssText:${GITHUB_TOKEN}@github.com/MssText/MssText.github.io.git
-  git config --global user.name "masongsong"
-  git config --global user.email "2698745548@qq.com"
+  githubUrl=https://zhouyalongs:${GITHUB_TOKEN}@github.com/MsszhouyalongsText/zhouyalongs.github.io.git
+  git config --global user.name "zhouyalong"
+  git config --global user.email "15515533605@163.com"
 fi
 git init
 git add -A
@@ -26,7 +26,7 @@ git commit -m "${msg}"
 git push -f $githubUrl master:gh-pages # 推送到github
 
 # deploy to coding
-# echo 'masongsong.cn' > CNAME  # 自定义域名
+# echo 'zhouyalong.com' > CNAME  # 自定义域名
 ## echo 'google.com, pub-7828333725993554, DIRECT, f08c47fec0942fa0' > ads.txt # 谷歌广告相关文件
 #
 # if [ -z "$CODING_TOKEN" ]; then  # -z 字符串 长度为0则为true；$CODING_TOKEN来自于gitee仓库`Settings/Secrets`设置的私密环境变量
