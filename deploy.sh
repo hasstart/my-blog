@@ -9,17 +9,15 @@ npm run build
 # 进入生成的文件夹
 cd docs/.vuepress/dist
 
-git config --global user.name "zhouyalong"
-git config --global user.email "15515533605@163.com"
-
 # deploy to github
-if [ -z "$ACCESS_TOKEN" ]; then
+if [ -z "$GITHUB_TOKEN" ]; then
   msg='deploy'
   githubUrl=git@github.com:zhouyalongs/Bloging.git
 else
   msg='来自 github actions的自动部署'
-  githubUrl=https://zhouyalongs:${ACCESS_TOKEN}@github.com/zhouyalongs/Bloging.git
-
+  githubUrl=https://zhouyalongs:${GITHUB_TOKEN}@github.com/zhouyalongs/Bloging.git
+  git config --global user.name "zhouyalong"
+  git config --global user.email "15515533605@163.com"
 fi
 git init
 git add -A
