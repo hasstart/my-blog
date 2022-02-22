@@ -6,6 +6,7 @@ module.exports = {
   theme: require.resolve('../../theme-vdoing'), // 使用本地主题
   title: "more than thing",
   description: '记录生活,点滴成长',
+  base: '/Bloging/', // '/<github仓库名>/'， 默认'/'
   markdown: {
     lineNumbers: true, // 代码行号
   },
