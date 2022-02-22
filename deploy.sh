@@ -10,34 +10,11 @@ npm run build
 cd docs/.vuepress/dist
 
 # deploy to github
-echo 'zhouyalong.com' > CNAME
-if [ -z "$GITHUB_TOKEN" ]; then
-  msg='deploy'
-  githubUrl=git@github.com:zhouyalongs/zhouyalongs.github.io.git
-else
-  msg='来自github actions的自动部署'
-  githubUrl=https://zhouyalongs:${GITHUB_TOKEN}@github.com/MsszhouyalongsText/zhouyalongs.github.io.git
-  git config --global user.name "zhouyalong"
-  git config --global user.email "15515533605@163.com"
-fi
+
 git init
 git add -A
-git commit -m "${msg}"
-git push -f $githubUrl master:gh-pages # 推送到github
+git commit -m "来自github actions的自动部署"
+git push -f git@github.com:zhouyalongs/my-blog.git master:blog-pages # 推送到github
 
-# deploy to coding
-# echo 'zhouyalong.com' > CNAME  # 自定义域名
-## echo 'google.com, pub-7828333725993554, DIRECT, f08c47fec0942fa0' > ads.txt # 谷歌广告相关文件
-#
-# if [ -z "$CODING_TOKEN" ]; then  # -z 字符串 长度为0则为true；$CODING_TOKEN来自于gitee仓库`Settings/Secrets`设置的私密环境变量
-#   codingUrl=git@e.coding.net:mss-blog/mss-blog/blog.git
-# else
-#   codingUrl=https://mss-blog:${CODING_TOKEN}@e.coding.net/mss-blog/blog.git
-# fi
-# git add -A
-# git commit -m "${msg}"
-# git push -f $codingUrl master # 推送到coding
-#
-#
-#cd - # 退回开始所在目录
-#rm -rf docs/.vuepress/dist
+cd - # 退回开始所在目录
+rm -rf docs/.vuepress/dist
