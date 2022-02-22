@@ -9,7 +9,7 @@ on:
       - master
 
 env: # 设置环境变量
-  TZ: Asia/Beijing # 时区
+  TZ: Asia/Beijing # 时区ad
 
 jobs:
   build: # 自定义名称
