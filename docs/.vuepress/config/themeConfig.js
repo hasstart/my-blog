@@ -34,8 +34,13 @@ module.exports = {
       ],
     },
     {
-      text: '算法',
+      text: '学无止境',
       link: '/pages/e46525/',
+      items: [
+        { text: '算法', link: '/pages/46e3e9/' },
+        { text: 'Java', link: '/pages/1/' },
+        { text: 'Python', link: '/pages/2/' },
+      ],
     },
     {
       text: '闲暇之余',
