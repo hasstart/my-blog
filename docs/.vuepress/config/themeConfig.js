@@ -3,7 +3,7 @@ module.exports = {
   nav:  [
     { text: '首页', link: '/' },
     {
-      text: '页面杂谈',
+      text: '基础知识',
       link: '/pages/7f4764/',
       items: [
         { text: 'HTML', link: '/pages/e42f0c/' },
@@ -13,7 +13,7 @@ module.exports = {
       ],
     },
     {
-      text: '框架',
+      text: '框架通识',
       link: '/pages/a787e4/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
       items: [
         // 说明：以下所有link的值只是在相应md文件定义的永久链接（不是什么特殊生成的编码）。另外，注意结尾是有斜杠的
@@ -28,9 +28,10 @@ module.exports = {
       items: [
         { text: '前端安全', link: '/pages/d1fdc6/' },
         { text: '微信相关', link: '/pages/c926f9/' },
-        // { text: '混合App', link: '/pages/686027/' },
+        { text: '性能优化', link: '/pages/82468b/' },
         { text: 'Webpack', link: '/pages/b79286/' },
         { text: 'Node', link: '/pages/dcb6ce/' },
+        { text: 'hybridApp ', link: '/pages/5fa3df/' },
       ],
     },
     {
@@ -58,7 +59,7 @@ module.exports = {
   editLinkText: '编辑',
 
   isShowReadTime: true, // 是否展示阅读时间
-  // wordsPerMinute: 100, // 每分钟阅读的字数 默认是 300
+  wordsPerMinute: 100, // 每分钟阅读的字数 默认是 300
   isShowReadCount: true, // 是否开启阅读量统计
 
 
@@ -102,7 +103,7 @@ module.exports = {
     // 博主信息，显示在首页侧边栏
     avatar: 'https://cdn.jsdelivr.net/gh/MssText/learn@master/images/49203535.35emn5vryma0.png',
     name: 'zhouyalong',
-    slogan: '会当凌绝顶,一览众山小',
+    slogan: '天凉好个秋',
   },
   social: {
     // 社交图标，显示于博主信息栏和页脚栏
