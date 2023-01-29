@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>指标采集 | you know nothing</title>
+    <meta name="generator" content="VuePress 1.8.0">
+    <link rel="icon" href="/Bloging/img/logo.png">
+    <link rel="stylesheet" href="https://unpkg.com/mssui@0.1.13/lib/theme-chalk/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.min.js"></script>
+    <script src="https://unpkg.com/mssui@0.1.17/lib/index.js"></script>
+    <meta name="description" content="记录生活,点滴成长">
+    <meta name="keywords" content="前端博客,个人技术博客,前端,前端开发,前端框架,web前端,前端面试题,技术文档,学习,面试,JavaScript,js,ES6,TypeScript,vue,python,css3,html5,Node,git,github,markdown">
+    <meta name="theme-color" content="#11a8cd">
+    <link rel="preload" href="/Bloging/assets/css/0.styles.7e19c1e2.css" as="style"><link rel="preload" href="/Bloging/assets/js/app.2aa6d5b3.js" as="script"><link rel="preload" href="/Bloging/assets/js/3.96531fce.js" as="script"><link rel="preload" href="/Bloging/assets/js/4.8451043b.js" as="script"><link rel="preload" href="/Bloging/assets/js/75.531a778b.js" as="script"><link rel="prefetch" href="/Bloging/assets/js/1.fc2f76d2.js"><link rel="prefetch" href="/Bloging/assets/js/10.8641cfba.js"><link rel="prefetch" href="/Bloging/assets/js/100.df77cb7e.js"><link rel="prefetch" href="/Bloging/assets/js/11.b2a25797.js"><link rel="prefetch" href="/Bloging/assets/js/12.8ebf8caa.js"><link rel="prefetch" href="/Bloging/assets/js/13.f8c25d16.js"><link rel="prefetch" href="/Bloging/assets/js/14.26f1cd6d.js"><link rel="prefetch" href="/Bloging/assets/js/15.4055abb9.js"><link rel="prefetch" href="/Bloging/assets/js/16.53024b04.js"><link rel="prefetch" href="/Bloging/assets/js/17.87929c73.js"><link rel="prefetch" href="/Bloging/assets/js/18.37f3a026.js"><link rel="prefetch" href="/Bloging/assets/js/19.b6301327.js"><link rel="prefetch" href="/Bloging/assets/js/20.308e81fb.js"><link rel="prefetch" href="/Bloging/assets/js/21.ae950520.js"><link rel="prefetch" href="/Bloging/assets/js/22.64e3f804.js"><link rel="prefetch" href="/Bloging/assets/js/23.7f06754b.js"><link rel="prefetch" href="/Bloging/assets/js/24.489e5b23.js"><link rel="prefetch" href="/Bloging/assets/js/25.c2a6f1d8.js"><link rel="prefetch" href="/Bloging/assets/js/26.c6d4c468.js"><link rel="prefetch" href="/Bloging/assets/js/27.bb3fd285.js"><link rel="prefetch" href="/Bloging/assets/js/28.9808631f.js"><link rel="prefetch" href="/Bloging/assets/js/29.3f7831ce.js"><link rel="prefetch" href="/Bloging/assets/js/30.58baf494.js"><link rel="prefetch" href="/Bloging/assets/js/31.2bbd00ba.js"><link rel="prefetch" href="/Bloging/assets/js/32.933e6496.js"><link rel="prefetch" href="/Bloging/assets/js/33.9a465bb3.js"><link rel="prefetch" href="/Bloging/assets/js/34.473d46f4.js"><link rel="prefetch" href="/Bloging/assets/js/35.564f3522.js"><link rel="prefetch" href="/Bloging/assets/js/36.111cb779.js"><link rel="prefetch" href="/Bloging/assets/js/37.fd06e443.js"><link rel="prefetch" href="/Bloging/assets/js/38.095ad4e9.js"><link rel="prefetch" href="/Bloging/assets/js/39.65c812d0.js"><link rel="prefetch" href="/Bloging/assets/js/40.c22496a3.js"><link rel="prefetch" href="/Bloging/assets/js/41.0403c37d.js"><link rel="prefetch" href="/Bloging/assets/js/42.bbb3f4b9.js"><link rel="prefetch" href="/Bloging/assets/js/43.f6e9dfff.js"><link rel="prefetch" href="/Bloging/assets/js/44.b1d9d695.js"><link rel="prefetch" href="/Bloging/assets/js/45.b124f4de.js"><link rel="prefetch" href="/Bloging/assets/js/46.1c42efc4.js"><link rel="prefetch" href="/Bloging/assets/js/47.05f1a85f.js"><link rel="prefetch" href="/Bloging/assets/js/48.95136e76.js"><link rel="prefetch" href="/Bloging/assets/js/49.99604df1.js"><link rel="prefetch" href="/Bloging/assets/js/5.f19f5ae5.js"><link rel="prefetch" href="/Bloging/assets/js/50.06b7fbf2.js"><link rel="prefetch" href="/Bloging/assets/js/51.165c94b9.js"><link rel="prefetch" href="/Bloging/assets/js/52.99650a38.js"><link rel="prefetch" href="/Bloging/assets/js/53.62371787.js"><link rel="prefetch" href="/Bloging/assets/js/54.6172303f.js"><link rel="prefetch" href="/Bloging/assets/js/55.bbdcb602.js"><link rel="prefetch" href="/Bloging/assets/js/56.729cdf74.js"><link rel="prefetch" href="/Bloging/assets/js/57.6e908e75.js"><link rel="prefetch" href="/Bloging/assets/js/58.2864a48c.js"><link rel="prefetch" href="/Bloging/assets/js/59.4e55f1ca.js"><link rel="prefetch" href="/Bloging/assets/js/6.60fb555c.js"><link rel="prefetch" href="/Bloging/assets/js/60.af74aae5.js"><link rel="prefetch" href="/Bloging/assets/js/61.7e175f61.js"><link rel="prefetch" href="/Bloging/assets/js/62.6980d3f9.js"><link rel="prefetch" href="/Bloging/assets/js/63.dcb7f769.js"><link rel="prefetch" href="/Bloging/assets/js/64.775818f3.js"><link rel="prefetch" href="/Bloging/assets/js/65.5bbe9a48.js"><link rel="prefetch" href="/Bloging/assets/js/66.b31397be.js"><link rel="prefetch" href="/Bloging/assets/js/67.de105626.js"><link rel="prefetch" href="/Bloging/assets/js/68.1e478521.js"><link rel="prefetch" href="/Bloging/assets/js/69.c7503524.js"><link rel="prefetch" href="/Bloging/assets/js/7.2714efd9.js"><link rel="prefetch" href="/Bloging/assets/js/70.6be8694b.js"><link rel="prefetch" href="/Bloging/assets/js/71.db89b70b.js"><link rel="prefetch" href="/Bloging/assets/js/72.f1a2c437.js"><link rel="prefetch" href="/Bloging/assets/js/73.0f1af1e2.js"><link rel="prefetch" href="/Bloging/assets/js/74.15075fcd.js"><link rel="prefetch" href="/Bloging/assets/js/76.4b6dec3b.js"><link rel="prefetch" href="/Bloging/assets/js/77.8db75474.js"><link rel="prefetch" href="/Bloging/assets/js/78.96c5b697.js"><link rel="prefetch" href="/Bloging/assets/js/79.332491db.js"><link rel="prefetch" href="/Bloging/assets/js/8.ac2f19b0.js"><link rel="prefetch" href="/Bloging/assets/js/80.ccf98d3b.js"><link rel="prefetch" href="/Bloging/assets/js/81.89be4231.js"><link rel="prefetch" href="/Bloging/assets/js/82.b1f4a735.js"><link rel="prefetch" href="/Bloging/assets/js/83.a5e40604.js"><link rel="prefetch" href="/Bloging/assets/js/84.488775af.js"><link rel="prefetch" href="/Bloging/assets/js/85.30930aef.js"><link rel="prefetch" href="/Bloging/assets/js/86.a68eabf3.js"><link rel="prefetch" href="/Bloging/assets/js/87.7025211e.js"><link rel="prefetch" href="/Bloging/assets/js/88.3ef32de1.js"><link rel="prefetch" href="/Bloging/assets/js/89.ca3f25c5.js"><link rel="prefetch" href="/Bloging/assets/js/9.27a091e8.js"><link rel="prefetch" href="/Bloging/assets/js/90.225aeae1.js"><link rel="prefetch" href="/Bloging/assets/js/91.e3a5438b.js"><link rel="prefetch" href="/Bloging/assets/js/92.48956e7f.js"><link rel="prefetch" href="/Bloging/assets/js/93.6891c60d.js"><link rel="prefetch" href="/Bloging/assets/js/94.07cde64b.js"><link rel="prefetch" href="/Bloging/assets/js/95.4966444e.js"><link rel="prefetch" href="/Bloging/assets/js/96.c1853b5f.js"><link rel="prefetch" href="/Bloging/assets/js/97.e8c1d321.js"><link rel="prefetch" href="/Bloging/assets/js/98.25b0955e.js"><link rel="prefetch" href="/Bloging/assets/js/99.dbab7db6.js">
+    <link rel="stylesheet" href="/Bloging/assets/css/0.styles.7e19c1e2.css">
+  </head>
+  <body class="theme-mode-light">
+    <div id="app" data-server-rendered="true"><div class="theme-container sidebar-open have-rightmenu"><header class="navbar blur"><div title="目录" class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/Bloging/" class="home-link router-link-active"><img src="/Bloging/img/logo.png" alt="you know nothing" class="logo"> <span class="site-name can-hide">you know nothing</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/Bloging/" class="nav-link firstMenu-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础知识" class="dropdown-title"><a href="/Bloging/pages/7f4764/" class="link-title">基础知识</a> <span class="title" style="display:none;">基础知识</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Bloging/pages/e42f0c/" class="nav-link">HTML</a></li><li class="dropdown-item"><!----> <a href="/Bloging/pages/ef83a2/" class="nav-link">CSS</a></li><li class="dropdown-item"><!----> <a href="/Bloging/pages/c13c31/" class="nav-link">JavaScript</a></li><li class="dropdown-item"><!----> <a href="/Bloging/pages/76f4b0/" class="nav-link">TypeScript</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="框架通识" class="dropdown-title"><a href="/Bloging/pages/a787e4/" class="link-title">框架通识</a> <span class="title" style="display:none;">框架通识</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Bloging/pages/bb33b9/" class="nav-link">Vue</a></li><li class="dropdown-item"><!----> <a href="/Bloging/pages/ddcd99/" class="nav-link">React</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端延展" class="dropdown-title"><a href="/Bloging/pages/a9e92d" class="link-title">前端延展</a> <span class="title" style="display:none;">前端延展</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Bloging/pages/d1fdc6/" class="nav-link">前端安全</a></li><li class="dropdown-item"><!----> <a href="/Bloging/pages/c926f9/" class="nav-link">微信相关</a></li><li class="dropdown-item"><!----> <a href="/Bloging/pages/82468b/" class="nav-link">性能优化</a></li><li class="dropdown-item"><!----> <a href="/Bloging/pages/b79286/" class="nav-link">Webpack</a></li><li class="dropdown-item"><!----> <a href="/Bloging/pages/dcb6ce/" class="nav-link">Node</a></li><li class="dropdown-item"><!----> <a href="/Bloging/pages/5fa3df/" class="nav-link">hybridApp </a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="学无止境" class="dropdown-title"><a href="/Bloging/pages/e46525/" class="link-title">学无止境</a> <span class="title" style="display:none;">学无止境</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Bloging/pages/46e3e9/" class="nav-link">算法</a></li><li class="dropdown-item"><!----> <a href="/Bloging/pages/1/" class="nav-link">Java</a></li><li class="dropdown-item"><!----> <a href="/Bloging/pages/2/" class="nav-link">Python</a></li></ul></div></div><div class="nav-item"><a href="/Bloging/pages/fcc60b/" class="nav-link firstMenu-link">闲暇之余</a></div> <a href="https://github.com/zhouyalongs/zhouyalongs.github.io" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar" style="display:none;"><div class="blogger"><img src="https://cdn.jsdelivr.net/gh/MssText/learn@master/images/49203535.35emn5vryma0.png"> <div class="blogger-info"><h3>zhouyalong</h3> <span>天凉好个秋</span></div></div> <nav class="nav-links"><div class="nav-item"><a href="/Bloging/" class="nav-link firstMenu-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础知识" class="dropdown-title"><a href="/Bloging/pages/7f4764/" class="link-title">基础知识</a> <span class="title" style="display:none;">基础知识</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Bloging/pages/e42f0c/" class="nav-link">HTML</a></li><li class="dropdown-item"><!----> <a href="/Bloging/pages/ef83a2/" class="nav-link">CSS</a></li><li class="dropdown-item"><!----> <a href="/Bloging/pages/c13c31/" class="nav-link">JavaScript</a></li><li class="dropdown-item"><!----> <a href="/Bloging/pages/76f4b0/" class="nav-link">TypeScript</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="框架通识" class="dropdown-title"><a href="/Bloging/pages/a787e4/" class="link-title">框架通识</a> <span class="title" style="display:none;">框架通识</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Bloging/pages/bb33b9/" class="nav-link">Vue</a></li><li class="dropdown-item"><!----> <a href="/Bloging/pages/ddcd99/" class="nav-link">React</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端延展" class="dropdown-title"><a href="/Bloging/pages/a9e92d" class="link-title">前端延展</a> <span class="title" style="display:none;">前端延展</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Bloging/pages/d1fdc6/" class="nav-link">前端安全</a></li><li class="dropdown-item"><!----> <a href="/Bloging/pages/c926f9/" class="nav-link">微信相关</a></li><li class="dropdown-item"><!----> <a href="/Bloging/pages/82468b/" class="nav-link">性能优化</a></li><li class="dropdown-item"><!----> <a href="/Bloging/pages/b79286/" class="nav-link">Webpack</a></li><li class="dropdown-item"><!----> <a href="/Bloging/pages/dcb6ce/" class="nav-link">Node</a></li><li class="dropdown-item"><!----> <a href="/Bloging/pages/5fa3df/" class="nav-link">hybridApp </a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="学无止境" class="dropdown-title"><a href="/Bloging/pages/e46525/" class="link-title">学无止境</a> <span class="title" style="display:none;">学无止境</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Bloging/pages/46e3e9/" class="nav-link">算法</a></li><li class="dropdown-item"><!----> <a href="/Bloging/pages/1/" class="nav-link">Java</a></li><li class="dropdown-item"><!----> <a href="/Bloging/pages/2/" class="nav-link">Python</a></li></ul></div></div><div class="nav-item"><a href="/Bloging/pages/fcc60b/" class="nav-link firstMenu-link">闲暇之余</a></div> <a href="https://github.com/zhouyalongs/zhouyalongs.github.io" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>前端安全</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>微信相关</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>性能优化</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/Bloging/pages/82468b/" class="sidebar-link">性能优化概述</a></li><li><a href="/Bloging/pages/e4ecdb/" aria-current="page" class="active sidebar-link">指标采集</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Bloging/pages/e4ecdb/#首屏指标采集有手动采集和自动化采集两种" class="sidebar-link">首屏指标采集有手动采集和自动化采集两种</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Bloging/pages/e4ecdb/#手动采集办法及优缺点" class="sidebar-link">手动采集办法及优缺点</a></li><li class="sidebar-sub-header"><a href="/Bloging/pages/e4ecdb/#自动化采集优势及办法" class="sidebar-link">自动化采集优势及办法</a></li><li class="sidebar-sub-header"><a href="/Bloging/pages/e4ecdb/#小结" class="sidebar-link">小结</a></li></ul></li><li class="sidebar-sub-header"><a href="/Bloging/pages/e4ecdb/#白屏指标采集" class="sidebar-link">白屏指标采集</a></li><li class="sidebar-sub-header"><a href="/Bloging/pages/e4ecdb/#卡顿指标采集" class="sidebar-link">卡顿指标采集</a></li><li class="sidebar-sub-header"><a href="/Bloging/pages/e4ecdb/#网络环境采集" class="sidebar-link">网络环境采集</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Bloging/pages/e4ecdb/#小结-2" class="sidebar-link">小结</a></li></ul></li><li class="sidebar-sub-header"><a href="/Bloging/pages/e4ecdb/#性能-sdk-设计" class="sidebar-link">性能 SDK 设计</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Bloging/pages/e4ecdb/#sdk-接入设计" class="sidebar-link">SDK 接入设计</a></li><li class="sidebar-sub-header"><a href="/Bloging/pages/e4ecdb/#性能-sdk-相关-api" class="sidebar-link">性能 SDK 相关 API</a></li><li class="sidebar-sub-header"><a href="/Bloging/pages/e4ecdb/#sdk-运行设计" class="sidebar-link">SDK 运行设计</a></li><li class="sidebar-sub-header"><a href="/Bloging/pages/e4ecdb/#上报策略设计" class="sidebar-link">上报策略设计</a></li><li class="sidebar-sub-header"><a href="/Bloging/pages/e4ecdb/#日志数据过滤" class="sidebar-link">日志数据过滤</a></li><li class="sidebar-sub-header"><a href="/Bloging/pages/e4ecdb/#数据抽样策略" class="sidebar-link">数据抽样策略</a></li><li class="sidebar-sub-header"><a href="/Bloging/pages/e4ecdb/#上报机制选择" class="sidebar-link">上报机制选择</a></li><li class="sidebar-sub-header"><a href="/Bloging/pages/e4ecdb/#小结-3" class="sidebar-link">小结</a></li></ul></li></ul></li><li><a href="/Bloging/pages/b2f269/" class="sidebar-link">搭建平台</a></li><li><a href="/Bloging/pages/c512b4/" class="sidebar-link">优化手段</a></li><li><a href="/Bloging/pages/c2cc11/" class="sidebar-link">Hybrid优化手段</a></li><li><a href="/Bloging/pages/0adf45/" class="sidebar-link">性能优化体系演进</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Webpack</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Node</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>hybridApp</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <div><main class="page"><div class="theme-vdoing-wrapper "><div class="articleInfo-wrap" data-v-783bcf04><div class="articleInfo" data-v-783bcf04><ul class="breadcrumbs" data-v-783bcf04><li data-v-783bcf04><a href="/Bloging/" title="首页" class="iconfont icon-home router-link-active" data-v-783bcf04></a></li> <li data-v-783bcf04><a href="/Bloging/pages/a9e92d/" title="前端延展-目录页" data-v-783bcf04>前端延展</a></li> <li data-v-783bcf04><a href="/Bloging/pages/a9e92d/#性能优化" title="前端延展#性能优化" data-v-783bcf04>性能优化</a></li> <!----></ul> <div class="info" data-v-783bcf04><div title="作者" class="author iconfont icon-touxiang" data-v-783bcf04><a href="https://github.com/zhouyalongs" target="_blank" title="作者" class="beLink" data-v-783bcf04>zhouyalong</a></div> <div title="创建时间" class="date iconfont icon-riqi" data-v-783bcf04><a href="javascript:;" data-v-783bcf04>2022-08-09</a></div> <!----> <div class="date iconfont icon-yuedu" data-v-783bcf04><span data-v-783bcf04>时间 87分钟</span></div> <div id="/pages/e4ecdb/" data-flag-title="指标采集" class="leancloud_visitors date iconfont icon-eye" data-v-783bcf04><span class="post-meta-item-text" data-v-783bcf04>阅读量 </span> <span class="leancloud-visitors-count" data-v-783bcf04>0</span></div></div></div></div> <!----> <div class="content-wrapper"><div class="right-menu-wrapper"><div class="right-menu-margin"><div class="right-menu-content"></div></div></div> <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAABGpJREFUSA3tVVtoXFUU3fvOI53UlmCaKIFmwEhsE7QK0ipFEdHEKpXaZGrp15SINsXUWvBDpBgQRKi0+KKoFeJHfZA+ED9KKoIU2gYD9UejTW4rVIzm0VSTziPzuNu1z507dibTTjL4U/DAzLn3nL3X2o91ziX6f9wMFdh6Jvbm9nNSV0msViVO6tN1Rm7NMu2OpeJ9lWBUTDxrJbYTS0hInuwciu9eLHlFxCLCZEk3MegsJmZ5K/JD6t7FkFdEvGUo1g7qJoG3MHImqRIn8/nzY1K9UPKKiJmtnUqHVE3Gbuay6vJE/N2FEmuxFjW2nUuE0yQXRRxLiTUAzs36zhZvOXJPdX850EVnnLZkB8prodQoM5JGj7Xk2mvC7JB8tG04Ef5PiXtG0UtxupRQSfTnBoCy554x18yJHI6I+G5Eru4LHmPJZEQsrvPUbMiA8G/WgMK7w7I+ez7++o2ANfbrjvaOl1tFMs+htG3IrZH9/hDX1Pr8Tc0UvH8tcX29KzAgIGcEkINyW5BF9x891hw6VYqgJHEk0huccS7vh3C6gTiODL+26huuBtbct8eZnqLML8PkxGYpuPZBqtqwkSjgc4mB5gbgig5i+y0UDK35LMxXisn9xQtK+nd26gTIHsHe/oblK/b29fUmN/8Y+9jAQrnBp56m1LcDlDp9irKTExSKduXJVWSqdBMA08pEJnEIOB3FPPMybu/oeV8zFeYN3xx576Q6RH+VmplE4ncQV5v+5rzSoyOU7PuEAg8g803PwBJ0CExno/jcMbN8tONYeOmHiuUNryvm3fRUy4tMPVLdAGkUhNWuggGrJcXPv+ouCjz0MKUHz1J2/E8IC9nqTabcxgaBYM0hPhD5Y65FsbxRQKxCQrDjDctW7PUM3HuZunFyifSAqEfuzCp48Il24luWUWZoyJCaPR82jE0+kFA643wRFVni4RYSq3ohJO2pZ7B5dO4xkDWbEpossJPLSrPjYID8rS2UHTlvyNxqIGsg674XJJ7vnh5L7PNwC4hh2sjCI96mzszOTpxLF0T7l88Yz7lAuK6OnL8gXLOnTvpzSb22YG8W7us3jSebFHeeqnXRG1vt+MoUM84LQIBmMsCTAcOauTh0T0l0neQK7m2bLMt2mGxU3HYssS0J2cdv5wljlPsrIuZLAG/2DOZIXgCYT8uMGZN+e2kSirfxZOPCsC0f24nTZzspnVn9VePS1Z5vubmAGGXG8ZFno9Hel0yfA5ZPhF7Dh972BQJ2qCpgH67lmWtBYbvk6sz02wjky2vXyz0XErP/kFB619js1BtwfOV4OPRqOQBjy3Qbk18vigUPPSD5ceHnwck7W9bhAqZdd7SuG7w4/P2F/GaJh8c7e9qgow+Q7cGBo+98WsLkuktFqiZabtXuQTu/Y5ETbR0v7tNSFnvrmu6pjdoan2KjMu8q/Hmj1EfCO2ZGfEIbIXKUlw8qaX9/b2oeSJmFksSeT/Fn0V3nSypChh4Gjh74ybO9aeZ/AN2dwciu2/MhAAAAAElFTkSuQmCC">
+          指标采集
+        </h1> <!----> <div class="theme-vdoing-content content__default"><h2 id="首屏指标采集有手动采集和自动化采集两种"><a href="#首屏指标采集有手动采集和自动化采集两种" class="header-anchor">#</a> 首屏指标采集有手动采集和自动化采集两种</h2> <h3 id="手动采集办法及优缺点"><a href="#手动采集办法及优缺点" class="header-anchor">#</a> 手动采集办法及优缺点</h3> <p>所谓手动采集，一般是通过埋点的方式进行， 比如在页面开始位置打上 <code>FMP.Start()</code>，在首屏结束位置打上 <code>FMP.End()</code>，利用<code>FMP.End()-FMP.Start()</code>获取到首屏时间。</p> <p>以电商平台为例，如果是电商类商品详情页，首屏包括头图、购买、商品信息、下单按钮等，就在这些内容加载完毕的位置打上首屏结束的点。</p> <p>如果是电商列表页，瀑布流型的页面，需要根据各个机型下的首屏位置，估算一个平均的首屏位置，然后打上点。</p> <p>如果是直播型的页面，页面核心是一个直播框，就需要在直播框的结束位置，打上点。</p> <p>手动采集都有哪些优点和缺点呢？</p> <p>首先是它兼容性强，业务同学知道在这个业务场景下首屏结束点在哪里，可以随情况变动。其次是去中心化，各个业务负责自己的打点代码，有问题时业务同学去排查即可，假如一条业务出现问题，并不会影响其他业务。</p> <p>缺点方面，手动采集会和业务代码严重耦合，如果首屏采集逻辑调整，业务代码也需要修改；还有，它的覆盖率不足，因为要手动采集，业务一旦忙起来，性能优化方案就会延迟排后。</p> <p>最后，手动采集的统计结果并不精确，因为依赖于人，每个人对首屏的理解有偏差，经常打错或者忘记打点。</p> <h3 id="自动化采集优势及办法"><a href="#自动化采集优势及办法" class="header-anchor">#</a> 自动化采集优势及办法</h3> <p>接下来我们看自动化采集。获取首屏时间，目前业界还是以自动化采集为主。所谓自动化采集，即引入一段通用的代码来做首屏时间自动化采集，引入过程中，除了必要的配置不需要做其他事情。</p> <p>自动化采集的好处是独立性更强，接入过程更自动化。具体的自动化采集代码，可以由一个公共团队来开发，试点后，推广到各个业务团队。而且统计结果更标准化，同一段统计代码，标准更统一，业务侧同学也更认可这个统计结果。</p> <p>当然，它也有缺点，最明显的是，有些个性化需求无法满足，毕竟在工作中，总会有一些特殊业务场景。所以，采用自动化采集方案必须做一些取舍。</p> <p>既然是自动化采集，具体怎么采集呢？都有哪些办法？</p> <p>首屏指标自动化采集，需要考虑是服务端模板业务，还是单页面（SPA）应用开发业务，业务场景不同，对应的采集方法也不同。下面我来分别介绍下。</p> <h4 id="服务端模板业务下的采集办法"><a href="#服务端模板业务下的采集办法" class="header-anchor">#</a> 服务端模板业务下的采集办法</h4> <p>提到服务端模板业务，很多人可能会问，现在不都是 Vue 和 React 这些单页面应用的天下了吗？其实在一些 B 端业务的公司用的还是服务端模板，如 Velocity、Smarty 等。另外大名鼎鼎的 SSR 用的也是服务端模板。</p> <p>这些业务后端比较重，前端偏配合，出于效率方面的考虑，前后端并没有解耦。因此，公司内部研发同学既做前端又做后端，这时候如果使用现在流行的 Vue/React，无疑会增加学习成本。</p> <p>那服务端模板项目的加载流程是怎样的呢？</p> <p>大致流程是这样的：HTTP 请求 → HTML 文档加载解析完成 → 加载样式和脚本文件 → 完成页面渲染。</p> <p>其中，HTML 文档加载解析完成的时间点，就是首屏时间点，而要采集这个首屏时间，可以用浏览器提供的 DOMContentLoaded 接口来实现。</p> <p>我们来直观看一下什么是 DOMContentLoaded。打开 Chrome 浏览器调试工具，进入 Network 选项，重新加载网页，我们就会得到这么一张图。</p> <p><img src="/performance/DOMContentLoaded.png" alt="DOMContentLoaded">
+DOMContentLoaded 示意图</p> <p>右侧中间竖向的一条蓝线，代表了 DOMContentLoaded 这个事件触发的时间，而下面的蓝色文字（DOMContentLoaded 1.02s），代表 HTML 元素加载解析完成用了 1.02 秒。根据服务端模板项目加载流程，我们就知道这个时间就是首屏时间。</p> <p>那么，DOMContentLoaded 时间具体的采集思路是怎样的呢？</p> <p>当页面中的 HTML 元素被加载和解析完成（不需要等待样式表、图片和一些脚本的加载过程），DOMContentLoaded 事件触发。此时我们记录下当前时间 domContentLoadedEventEnd，再减去页面初始进入的时间 fetchStart，就是 DOMContentLoaded 的时间，也就是我们要采集的首屏时间。
+即首屏时间=DOMContentLoaded 时间=domContentLoadedEventEnd-fetchStart。</p> <p>那么，这种采集方法可以照搬到单页面应用下吗？答案是不可以。</p> <h4 id="单页面-spa-应用业务下的采集办法"><a href="#单页面-spa-应用业务下的采集办法" class="header-anchor">#</a> 单页面（SPA）应用业务下的采集办法</h4> <p>SPA 页面首屏时间采集会有什么不同？如果也使用 Performance API 会有什么问题？</p> <p>我举个例子，在 2018 年 6 月的 GMTC 大会上，阿里云曾分享了他们的一个首屏指标采集结果：</p> <div class="language- extra-class"><pre><code>使用 Performance API 接口采集的首屏时间是 1106ms
+实际的首屏时间是 1976ms
+</code></pre></div><p>为什么偏差如此大呢？</p> <p>原来在 Vue 页面中，整体加载流程是这样的。</p> <p>用户请求一个页面时，页面会先加载 index.html，加载完成后，就会触发 DOMContentLoaded 和 load。而这个时候，页面展示的只是个空白页。此时根本不算真正意义的首屏。接下来，页面会加载相关脚本资源并通过 axios 异步请求数据，使用数据渲染页面主题部分，这个时候首屏才渲染完成。</p> <p>正是这个原因造成了用 Performance 接口取得的时间是 1106ms，实际时间则是 1976ms，差距如此之大。可以说，SPA 的流行让 Performance 接口失去了原来的意义。那么，这种情况下怎么采集首屏指标呢？可以使用 MutationObserver 采集首屏时间。</p> <p>SPA 页面因为无法基于 DOMContentLoaded 做首屏指标采集，最初我们想过使用技术栈的生命周期来解决这个问题。</p> <p>比如，我们以 Vue 为例，记录首屏各个组件 mounted 的时间，最终在 onload 时，统计出最后一个组件 mounted 的时间，做为首屏时间。但很快，我就发现这个方案存在以下问题。</p> <ol><li><p>如果一个首屏页面的内容没有被组件化，那么首屏时间无法被统计到，除非各个业务都定一套组件标准，首屏内容必须封装成组件。</p></li> <li><p>前面也提过 onload 的时间并非最终时间，可能 onload 时，首屏还没加载完。</p></li> <li><p>没有考虑首屏是张图片的情况，在这种情况，首屏虽然加载完成了，可是图片是异步的，图片并没有加载，试想你会在看不到商品图片的情况下，直接下单吗？</p></li></ol> <p>当时我们就想，如果能在首屏渲染过程中，把各个资源的加载时间记录到日志中，后续再通过分析，确定某一个资源加载完的时间，就是首屏时间。而 MutationObserver 恰恰可以做到这些。</p> <p>MutationObserver 是什么意思呢？请看 MDN 上关于它的定义：</p> <div class="language- extra-class"><pre><code>MutationObserver 接口提供了监视对 DOM 树所做更改的能力。它被设计为旧的 Mutation Events 功能的替代品，该功能是 DOM3 Events 规范的一部分。
+</code></pre></div><p>简单来说， 使用 MutationObserver 能监控页面信息的变化，当页面 body 变化最剧烈的时候，我们拿到的时间数据，就是首屏时间。</p> <p>但具体怎么做呢？</p> <p>首先，在用户进入页面时，我们可以使用 MutationObserver 监控 DOM 元素 （Document Object Model，文档对象模型）。当 DOM 元素发生变化时，程序会标记变化的元素，记录时间点和分数，存储到数组中。数据的格式类似于 [200ms,18.5] 。</p> <p>为了提升计算的效率，我们认为首屏指标采集到某些条件时，首屏渲染已经结束，我们需要考虑首屏采集终止的条件，即计算时间超过 30 秒还没有结束；计算了 4 轮且 1 秒内分数不再变化；计算了 9 次且分数不再变化。</p> <p>接下来，设定元素权重计算分数。</p> <p>递归遍历 DOM 元素及其子元素，根据子元素所在层数设定元素权重，比如第一层元素权重是 1，当它被渲染时得 1 分，每增加一层权重增加 0.5，比如第五层元素权重是 3.5，渲染时给出对应分数。</p> <p>为什么需要权重呢？</p> <p>因为页面中每个 DOM 元素对于首屏的意义是不同的，越往内层越接近真实的首屏内容，如图片和文字，越往外层越接近 body 等框架层。</p> <p>最后，根据前面的得分，计算元素的分数变化率，获取变化率最大点对应的分数。然后找到该分数对应的时间，即为首屏时间。</p> <p>分数部分核心计算逻辑是递归遍历元素，将一些无用的标签排除，如果元素超过可视范围返回 0 分，每一层增加 0.5 的权重，具体请看下面代码示例。</p> <div class="language- extra-class"><pre><code>```js
+function CScor(el, tiers, parentScore) {
+    let score = 0;
+    const tagName = el.tagName;
+    if (&quot;SCRIPT&quot; !== tagName &amp;&amp; &quot;STYLE&quot; !== tagName &amp;&amp; &quot;META&quot; !== tagName &amp;&amp; &quot;HEAD&quot; !== tagName) {
+      const childrenLen = el.children ? el.children.length : 0;
+      if (childrenLen &gt; 0) for (let childs = el.children, len = childrenLen - 1; len &gt;= 0; len--) {
+        score += calculateScore(childs[len], tiers + 1, score &gt; 0);
+      }
+      if (score &lt;= 0 &amp;&amp; !parentScore) {
+        if (!(el.getBoundingClientRect &amp;&amp; el.getBoundingClientRect().top &lt; WH)) return 0;
+      }
+      score += 1 + .5 * tiers;
+    }
+    return score;
+}
+```
+</code></pre></div><p>变化率部分核心计算逻辑是获取 DOM 变化最大时对应的时间，代码如下所示。</p> <div class="language- extra-class"><pre><code>```js
+calFinallScore() {
+    try {
+      if (this.sendMark) return;
+      const time = Date.now() - performance.timing.fetchStart;
+      var isCheckFmp = time &gt; 30000 || SCORE_ITEMS &amp;&amp; SCORE_ITEMS.length &gt; 4 &amp;&amp; time - (SCORE_ITEMS &amp;&amp; SCORE_ITEMS.length &amp;&amp; SCORE_ITEMS[SCORE_ITEMS.length - 1].t || 0) &gt; 2 * CHECK_INTERVAL || (SCORE_ITEMS.length &gt; 10 &amp;&amp; window.performance.timing.loadEventEnd !== 0 &amp;&amp; SCORE_ITEMS[SCORE_ITEMS.length - 1].score === SCORE_ITEMS[SCORE_ITEMS.length - 9].score);
+      if (this.observer &amp;&amp; isCheckFmp) {
+        this.observer.disconnect();
+        window.SCORE_ITEMS_CHART = JSON.parse(JSON.stringify(SCORE_ITEMS));
+        let fmps = getFmp(SCORE_ITEMS);
+        let record = null
+        for (let o = 1; o &lt; fmps.length; o++) {
+          if (fmps[o].t &gt;= fmps[o - 1].t) {
+            let l = fmps[o].score - fmps[o - 1].score;
+            (!record || record.rate &lt;= l) &amp;&amp; (record = {
+              t: fmps[o].t,
+              rate: l
+            });
+          }
+        }
+        //
+        this.fmp = record &amp;&amp; record.t || 30001;
+        try {
+          this.checkImgs(document.body)
+          let max = Math.max(...this.imgs.map(element =&gt; {
+            if(/^(\/\/)/.test(element)) element = 'https:' + element;
+            try {
+              return performance.getEntriesByName(element)[0].responseEnd || 0
+            } catch (error) {
+              return 0
+            }
+          }))
+          record &amp;&amp; record.t &gt; 0 &amp;&amp; record.t &lt; 36e5 ? this.setPerformance({
+            fmpImg: parseInt(Math.max(record.t , max))
+          }) : this.setPerformance({});
+        } catch (error) {
+          this.setPerformance({});
+          // console.error(error)
+        }
+      } else {
+        setTimeout(() =&gt; {
+          this.calFinallScore();
+        }, CHECK_INTERVAL);
+      }
+    } catch (error) {
+    }
+
+  }
+```
+</code></pre></div><p>这个就是首屏计算的部分流程。</p> <p>看完前面的流程，不知道你有没有这样的疑问：如果页面里包含图片，使用上面的首屏指标采集方案，结果准确吗？</p> <p>结论是：不准确。上述计算逻辑主要是针对 DOM 元素来做的，图片加载过程是异步，图片容器（图片的 DOM 元素）和内容的加载是分开的，当容器加载出来时，内容还没出来，一定要确保内容加载出来，才算首屏。</p> <p>这就需要增加一些策略了，以下是包含图片页面的首屏计算 demo。</p> <div class="language- extra-class"><pre><code>```html
+&lt;!doctype html&gt;&lt;body&gt;&lt;img id=&quot;imgTest&quot; src=&quot;https://www.baidu.com/img/bd_logo1.png?where=super&quot;&gt;
+  &lt;img id=&quot;imgTest&quot; src=&quot;https://www.baidu.com/img/bd_logo1.png?where=super&quot;&gt;
+  &lt;style type=text/css&gt;
+    background-image:url('https://www.baidu.com/img/dong_8f1d47bcb77d74a1e029d8cbb3b33854.gif);
+  &lt;/style&gt;
+  &lt;/body&gt;
+  &lt;html&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+(() =&gt; {
+  const imgs = []
+  const getImageDomSrc = {
+    _getImgSrcFromBgImg: function (bgImg) {
+      var imgSrc;
+      var matches = bgImg.match(/url\(.*?\)/g);
+      if (matches &amp;&amp; matches.length) {
+        var urlStr = matches[matches.length - 1];
+        var innerUrl = urlStr.replace(/^url\([\'\&quot;]?/, '').replace(/[\'\&quot;]?\)$/, '');
+        if (((/^http/.test(innerUrl) || /^\/\//.test(innerUrl)))) {
+          imgSrc = innerUrl;
+        }
+      }
+      return imgSrc;
+    },
+    getImgSrcFromDom: function (dom, imgFilter) {
+      if (!(dom.getBoundingClientRect &amp;&amp; dom.getBoundingClientRect().top &lt; window.innerHeight))
+        return false;
+      imgFilter = [/(\.)(png|jpg|jpeg|gif|webp|ico|bmp|tiff|svg)/i]
+      var src;
+      if (dom.nodeName.toUpperCase() == 'IMG') {
+        src = dom.getAttribute('src');
+      } else {
+        var computedStyle = window.getComputedStyle(dom);
+        var bgImg = computedStyle.getPropertyValue('background-image') || computedStyle.getPropertyValue('background');
+        var tempSrc = this._getImgSrcFromBgImg(bgImg, imgFilter);
+        if (tempSrc &amp;&amp; this._isImg(tempSrc, imgFilter)) {
+          src = tempSrc;
+        }
+      }
+      return src;
+    },
+    _isImg: function (src, imgFilter) {
+      for (var i = 0, len = imgFilter.length; i &lt; len; i++) {
+        if (imgFilter[i].test(src)) {
+          return true;
+        }
+      }
+      return false;
+    },
+    traverse(e) {
+      var _this = this
+        , tName = e.tagName;
+      if (&quot;SCRIPT&quot; !== tName &amp;&amp; &quot;STYLE&quot; !== tName &amp;&amp; &quot;META&quot; !== tName &amp;&amp; &quot;HEAD&quot; !== tName) {
+        var el = this.getImgSrcFromDom(e)
+        if (el &amp;&amp; !imgs.includes(el))
+          imgs.push(el)
+        var len = e.children ? e.children.length : 0;
+        if (len &gt; 0)
+          for (var child = e.children, _len = len - 1; _len &gt;= 0; _len--)
+            _this.traverse(child[_len]);
+      }
+    }
+  }
+  getImageDomSrc.traverse(document.body);
+  window.onload=function(){
+  var max = Math.max(...imgs.map(element =&gt; {
+    if (/^(\/\/)/.test(element))
+      element = 'https:' + element;
+    try {
+      return performance.getEntriesByName(element)[0].responseEnd || 0
+    } catch (error) {
+      return 0
+    }
+  }
+  ))
+  console.log(max);
+  }
+}
+)()
+&lt;/script&gt;
+```
+</code></pre></div><p>它的计算逻辑是这样的。</p> <p>首先，获取页面所有的图片路径。在这里，图片类型分两种，一种是带 IMG 标签的，一种是带 <code>DIV</code> 标签的。前者可以直接通过 src 值得到图片路径，后者可以使用 <code>window.getComputedStyle(dom)</code> 方式获取它的样式集合。</p> <p>接下来，通过正则获取图片的路径即可。</p> <p>然后通过 <code>performance.getEntriesByName(element)[0].responseEnd</code> 的方式获取到对应图片路径的下载时间，最后与使用 <code>MutationObserver</code> 获得的 <code>DOM</code> 首屏时间相比较，哪个更长，哪个就是最终的首屏时间。</p> <p>以上就是首屏采集的完整流程。</p> <h3 id="小结"><a href="#小结" class="header-anchor">#</a> 小结</h3> <p><img src="/performance/Indicator_collection.png" alt="Indicator_collection"></p> <p>这一讲我主要介绍了首屏指标采集相关的内容。不知道你看完后有没有这样的疑惑：</p> <p>这种性能采集方案靠谱吗？
+目前一线大厂有谁在使用这种采集方案？
+采集过程中会不会有什么坑？</p> <p>目前来说，这是市面中最好的首屏指标采集方案，它兼容了单页面应用和服务端模板的页面。我们反复做了几个月的数据实验，并借助它完成了一个全公司的性能优化项目，用实验和实践结果证明这种方案的靠谱程度。</p> <p>第二个问题，一线大厂里，阿里云、淘宝、阿里飞猪、得到 App、微店等公司都广泛在使用这个方案。</p> <p>最后一个问题，首屏指标采集中会不会有坑。实践中确实有不少的坑。比如，一个单页面应用，我们需要采集它的首屏时间，当我们采集首页的首屏指标时，用户恰好输入了一些东西导致页面跳转到了搜索结果页。此时首屏采集脚本继续在执行，那最终统计的就是搜索结果页的首屏数据而不是首页的</p> <p>类似这种问题，你想过怎么解决吗？欢迎在评论区和我留言进行交流。</p> <p>上面就是首屏指标采集和优化手段相关的内容，接下来看看其他的指标如何采集。</p> <p>源码地址：https://github.com/lagoueduCol/WebPerformanceOptimization-xifeng</p> <h2 id="白屏指标采集"><a href="#白屏指标采集" class="header-anchor">#</a> 白屏指标采集</h2> <p>白屏时间是指从输入内容回车（包括刷新、跳转等方式）后，到页面开始出现第一个字符的时间。白屏时间的长短会影响用户对 App 或站点的第一印象。</p> <p>白屏指标怎么采集呢？我们先来回顾一下前面讲过的浏览器的页面加载过程：</p> <p>客户端发起请求 -&gt; 下载 HTML 及 JS/CSS 资源 -&gt; 解析 JS 执行 -&gt; JS 请求数据 -&gt; 客户端解析 DOM 并渲染 -&gt; 下载渲染图片-&gt; 完成渲整体染。</p> <p>在这个过程中，客户端解析 DOM 并渲染之前的时间，都算白屏时间。所以，白屏时间的采集思路如下：白屏时间 = 页面开始展示时间点 - 开始请求时间点。如果你是借助浏览器的 <code>Performance API</code> 工具来采集，那么可以使用公式：白屏时间 <code>FP = domLoading - navigationStart</code>。</p> <p>这是浏览器页面加载过程，如果放在 App场景下，就不太一样了，App下的页面加载过程：</p> <p>初始化 <code>WebView</code> -&gt; 客户端发起请求 -&gt; 下载 HTML 及 JS/CSS 资源 -&gt; 解析 JS 执行 -&gt; JS 请求数据 -&gt; 服务端处理并返回数据 -&gt; 客户端解析 DOM 并渲染 -&gt; 下载渲染图片 -&gt; 完成整体渲染。</p> <p>App下的白屏时间，多了启动浏览器内核，也就是 <code>Webview</code> 初始化的时间。这个时间必须通过手动采集的方式来获得，而且因为线上线下时间差别不大，线下采集即可。具体来说，在 App 测试版本中，程序在 App 创建 <code>WebView</code> 时打一个点，然后在开始建立网络连接打一个点，这两个点的时间差就是 <code>Webview</code> 初始化的时间。</p> <h2 id="卡顿指标采集"><a href="#卡顿指标采集" class="header-anchor">#</a> 卡顿指标采集</h2> <p>所谓卡顿，简单来说就是页面出现卡住了的不流畅的情况。 提到它的指标，你是不是会一下就想到 FPS（<code>Frames Per Second</code>，每秒显示帧数）？FPS 多少算卡顿？网上有很多资料，大多提到 FPS 在 60 以上，页面流畅，不卡顿。但事实上并非如此，比如我们看电影或者动画时，素虽然 FPS 是 30 （低于60），但我们觉得很流畅，并不卡顿。</p> <p>FPS 低于 60 并不意味着卡顿，那 FPS 高于 60 是否意味着一定不卡顿呢？比如前 60 帧渲染很快（10ms 渲染 1 帧），后面的 3 帧渲染很慢（ 20ms 渲染 1 帧），这样平均起来 FPS 为95，高于 60 的标准。这种情况会不会卡顿呢？实际效果是卡顿的。因为卡顿与否的关键点在于单帧渲染耗时是否过长。</p> <p>但难点在于，在浏览器上，我们没办法拿到单帧渲染耗时的接口，所以这时候，只能拿 FPS 来计算，只要 FPS 保持稳定，且值比较低，就没问题。它的标准是多少呢？连续 3 帧不低于 20 FPS，且保持恒定。</p> <p>以 H5 为例，H5 场景下获取 FPS 方案如下：</p> <div class="language- extra-class"><pre><code>``` js
+  var fps_compatibility= function () {
+      return (
+          window.requestAnimationFrame ||
+          window.webkitRequestAnimationFrame ||
+          function (callback) {
+              window.setTimeout(callback, 1000 / 60);
+          }
+      );
+  }();
+  var fps_config={
+    lastTime:performance.now(),
+    lastFameTime : performance.now(),
+    frame:0
+  }
+  var fps_loop = function() {
+      var _first =  performance.now(),_diff = (_first - fps_config.lastFameTime);
+      fps_config.lastFameTime = _first;
+      var fps = Math.round(1000/_diff);
+      fps_config.frame++;
+      if (_first &gt; 1000 + fps_config.lastTime) {
+          var fps = Math.round( ( fps_config.frame * 1000 ) / ( _first - fps_config.lastTime ) );
+          console.log(`time: ${new Date()} fps is：`, fps);
+          fps_config.frame = 0;
+          fps_config.lastTime = _first ;
+      };
+      fps_compatibility(fps_loop);
+  }
+  fps_loop();
+  function isBlocking(fpsList, below=20, last=3) {
+    var count = 0
+    for(var i = 0; i &lt; fpsList.length; i++) {
+      if (fpsList[i] &amp;&amp; fpsList[i] &lt; below) {
+        count++;
+      } else {
+        count = 0
+      }
+      if (count &gt;= last) {
+        return true
+      }
+    }
+    return false
+  }
+```
+</code></pre></div><p>利用 <code>requestAnimationFrame</code> 在一秒内执行 60 次（在不卡顿的情况下）这一点，假设页面加载用时 X ms，这期间 <code>requestAnimationFrame</code> 执行了 N 次，则帧率为1000* N/X，也就是FPS。</p> <p>由于用户客户端差异很大，我们要考虑兼容性，在这里我们定义 <code>fps_compatibility</code> 表示兼容性方面的处理，在浏览器不支持 <code>requestAnimationFrame</code> 时，利用 <code>setTimeout</code> 来模拟实现，在 <code>fps_loop</code> 里面完成 FPS 的计算，最终通过遍历 fpsList 来判断是否连续三次 fps 小于20。</p> <p>如果连续判断 3次 FPS 都小于20，就认为是卡顿。</p> <p>那么，在 App 侧，怎么采集卡顿指标呢？</p> <p>App 侧可以拿到单帧渲染时长，直接让 App 取到单帧渲染时长，如果在 Android 环境下，可以直接取到单帧渲染时长。代码如下：</p> <div class="language- extra-class"><pre><code>``` java
+  private void calculateLag(long frameTimeNanos){
+  /*final long frameTimeNanos = mChoreographer.getFrameTimeNanos();*/
+  mLastFrameTimeNanos = System.nanoTime();
+      if (mLastFrameTimeNanos != 0) {
+          long costTime= (frameTimeNanos - mLastFrameTimeNanos)/ 1000000.0F;//计算成毫秒
+          //严重卡顿，单帧超过250ms
+          if (costTime&gt;= bigJankTime) {
+              bJank = true;
+          } else if (costTime&gt;= criticalBlockTime) {//超过50ms
+                  mCriticalBlockCount++;
+          } else {
+              if (bJank) {
+                  //严重卡顿上报逻辑
+              } else if (mCriticalBlockCount &gt;= cStuckThreshold) {
+                  //卡顿上报逻辑，5次50ms
+              }
+          }
+      }
+      mLastFrameTimeNanos = frameTimeNanos;
+  }
+```
+</code></pre></div><p>通过 <code>mChoreographer.getFrameTimeNanos</code> 和 <code>System.nanoTime</code> 计算出单帧渲染时长，如果单帧渲染时长超过 250ms，则严重卡断，反之连续 5 次超过 50ms，判定为卡顿。</p> <p>如果是 iOS 场景，要复杂一些，需要借助 CFRunLoop 来取到单帧渲染时长（CFRunLoop，它负责监听输入源，并调度处理）。代码如下：</p> <div class="language- extra-class"><pre><code>```java
+  static void runLoopObserverCallBack(CFRunLoopObserverRef observer, CFRunLoopActivity activity, void *info)
+  {
+      MyClass *object = (__bridge MyClass*)info;
+      // 记录状态值
+      object-&gt;activity = activity;
+      // 发送信号
+      dispatch_semaphore_t semaphore = moniotr-&gt;semaphore;
+      dispatch_semaphore_signal(semaphore);
+  }
+  - (void)registerObserver
+  {
+      CFRunLoopObserverContext context = {0,(__bridge void*)self,NULL,NULL};
+      CFRunLoopObserverRef observer = CFRunLoopObserverCreate(kCFAllocatorDefault,kCFRunLoopAllActivities,YES,0,&amp;runLoopObserverCallBack,&amp;context);
+      CFRunLoopAddObserver(CFRunLoopGetMain(), observer, kCFRunLoopCommonModes);
+      // 创建信号
+      semaphore = dispatch_semaphore_create(0);
+      // 在子线程监控时长
+      dispatch_async(dispatch_get_global_queue(0, 0), ^{
+          while (YES)
+          {
+              // 假定连续5次超时50ms认为卡顿(当然也包含了单次超时250ms)
+              long st = dispatch_semaphore_wait(semaphore, dispatch_time(DISPATCH_TIME_NOW, 50*NSEC_PER_MSEC));
+              if (st != 0)
+              {
+                  if (activity==kCFRunLoopBeforeSources || activity==kCFRunLoopAfterWaiting)
+                  {
+                      if (++timeoutCount &lt; 5)
+                          continue;
+                      // 检测到卡顿，进行卡顿上报
+                  }
+              }
+              timeoutCount = 0;
+          }
+      });
+  }
+```
+</code></pre></div><p>通过 <code>CFRunLoopObserverContext</code> 将休眠、唤醒的状态通知 <code>Observer</code>，然后通过 <code>dispatch_async</code> 在子线程时监控节点之间的时间，来计算主线程的时长。</p> <p>这里监控主线程是否卡顿这块儿，借鉴了导航 App 对交通堵塞问题的判断逻辑。</p> <p>导航 App 无法判断某个地点是否出了问题，如车坏在当路，正在施工，或者发生事故剐蹭了这些，但可以借助 GPS 和定位仪，拿到你两个节点之间的行驶速度，就可以推断出这个地点是否拥堵。这里的监控思路也正是如此，使用状态<code>kCFRunLoopBeforeSources</code> 和 <code>kCFRunLoopAfterWaiting</code> 两个节点之间的运行时间，和某个阈值（250ms）做比较，根据比较结果判定主线程是否出现卡顿。</p> <p>为什么会出现 App 白屏时间过长或卡顿问题呢？一般 WebView 初始化慢、DNS 解析慢、视图树过于复杂和主线程被阻塞等都会导致问题出现，但很多情况下白屏时间和卡顿都和网络环境有关。为了保证页面顺畅，我们需要做一些服务降级处理，比如对电商网站来说，高清图可以用文本代替，仅展示购买按钮和价格等核心内容。而要实现这个功能，就必须先做好网络环境采集。</p> <h2 id="网络环境采集"><a href="#网络环境采集" class="header-anchor">#</a> 网络环境采集</h2> <p>为什么不能直接拿到网络环境数据呢？如果在 App 内， 我们可以通过 App 提供的接口获取到网络情况，但在端外（App 外部环境，比如微信里面的页面，或者PC站、手机浏览器下的页面）我们就没法直接拿到当前网络情况了。这时怎么办呢？</p> <p>一个做法是拿到两张不同尺寸图片的加载时间，通过计算结果来判定当前网络环境。</p> <p>具体来说，我们在每次页面加载时，通过客户端向服务端发送图片请求，比如，请求一张 11 像素的图片和一张 33 像素的图片，然后在图片请求之初打一个时间点，在图片 onLoad 完成后打一个时间点，两个时间点之差，就是图片的加载时间。</p> <p>接着，我们用文件体积除以加载时间，就能得出两张图片的加载速度，然后把两张图片的加载速度求平均值，这个结果就可以当作网络速度了。</p> <p>因为每个单页面启动时，都会做一次网速采集，得到一个网络速度，我们可以把这些网络速度做概率分布，就能得出当前网络情况是 2G （750-1400ms）、3G （230-750ms）、4G或者WiFi（0-230ms）。</p> <p>下面这张图是 2016 年我在做移动端 M 站性能优化项目时，做的图片测速结果分布。横坐标是速度，纵坐标是网速在分布中的分位值，最左侧是 wifi网络，中间是 3G 网络，最右侧是 2G 网络。</p> <p><img src="/performance/Indicator_1.png" alt="Indicator_collection"></p> <p>图片测速结果分布</p> <p>根据这张图，你会发现自己的用户都停留在什么网段。比如，我在 2016 年发现，58 同城的用户测速分布，50% 的用户停留在 2G 水平。知道了这点，我们后续针对的优化手段就会更多侧重 2G 下的网络优化方案了。</p> <h3 id="小结-2"><a href="#小结-2" class="header-anchor">#</a> 小结</h3> <p><img src="/performance/Indicator_2.png" alt="Indicator_collection"></p> <p>前面我们详细讲了白屏时间采集、卡顿指标采集和网络环境采集，有了这个采集，我们就能很容易定位用户体验层的很多问题，比如加载感受、交互感受和弱网下的服务降级处理，等等。</p> <p>在白屏部分，里面提到的更偏加载阶段的白屏，实际工作中我们会遇到不少广义上的白屏，比如后端接口异常导致的白屏，数据加载中产生的白屏，甚至还有图片与视频加载过程或等待过程中的白屏。</p> <p>源码地址：https://github.com/lagoueduCol/WebPerformanceOptimization-xifeng/tree/master/chapter5</p> <h2 id="性能-sdk-设计"><a href="#性能-sdk-设计" class="header-anchor">#</a> 性能 SDK 设计</h2> <p>SDK 是指开发者为特定的软件、平台、操作系统提供的开发工具集，比如，微信为小程序提供的微信 JS-SDK。</p> <p>不过，在本讲，我主要介绍性能 SDK，即为公司各个产品业务提供性能统计的 JS SDK。它包括 API 接口、工程引入、文档平台、开发调试工具，主要是将性能采集代码和上报策略封装在一起，通过采集首屏、白屏等指标数据，然后上报到性能平台后端进行处理。</p> <p>由于性能 SDK 最终是给各个业务使用的，所以它的设计要满足在接入性能监控平台时，简单易用和运行平稳高效，这两个要求。</p> <h3 id="sdk-接入设计"><a href="#sdk-接入设计" class="header-anchor">#</a> SDK 接入设计</h3> <p>要保证 SDK 接入简单，容易使用，首先要把之前首屏、白屏和卡顿采集的脚本封装在一起，并让脚本自动初始化和运行。</p> <p><img src="/performance/Indicator_3.png" alt="Indicator_collection"></p> <h3 id="性能-sdk-相关-api"><a href="#性能-sdk-相关-api" class="header-anchor">#</a> 性能 SDK 相关 API</h3> <p>具体来说，首屏采集的分数计算部分 API（calculateScore）、变化率计算的 API（calFinallScore）和首屏图片时间计算 API（fmpImg）可以一起封装成 FMP API。其中首屏图片计算 API 因为比较独立，可以专门抽离成一个 util，供其他地方调用。白屏和卡顿采集也类似，可以封装成 FP API 和 BLOCK API。</p> <p>还有一个 ExtensionAPI 接口，用来封装一些后续需要使用的数据，比如加载瀑布流相关的数据（将首屏时间细分为DNS、TCP连接等时间），这些数据可以通过浏览器提供的 performance 接口获得。</p> <p>为了进行首屏、白屏、卡顿的指标采集，我们可以封装 Perf API，调用 FMP、FP、BLOCK、ExtensionAPI 四个 API 来完成。因为是调用 window.performance 接口，所以先做环境兼容性的判断，即看看浏览器是否支持 window.performance。</p> <p>最终我们接入时只要安装一个 npm 包，然后初始化即可，具体代码如下：</p> <div class="language- extra-class"><pre><code>```js
+  npm install @common/Perf -S;
+  import { perfInit } from '@common';
+  perfInit ();
+  或者以外链的形式接入：
+
+  &lt;script type=&quot;text/javascript&quot;&gt;https://s1.static.com/common/perf/static/js/1.0.0/perf.min.js&lt;/script&gt;
+  try {
+    perfInit ();
+  } catch (err) {
+    console.warn(err);
+  }
+```
+</code></pre></div><p>除了性能 SDK 自身的方案设计之外，提供帮助文档（如示例代码、 QA 列表等），也可以提高性能 SDK 的易用性。</p> <p>具体来说，我们可以搭建一个简单的性能 SDK 网站，进入站点后，前端工程师可以看到使用文档，包括各种平台下如何接入，接入的示例代码是怎样的，接入性能 SDK 后去哪个 URL 看数据，遇到异常问题时怎么调试，等等。</p> <p>另外，还可以设置性能分析小助手，快速定位一些基础问题。这个小助手怎么实现呢？我们在SDK 中通过检测访问页面的 URL 是不是加了调试参数（PERF_DEV_MODEL=PERF_DEV_MODEL），如果访问的页面 URL 中加了调试参数，打开页面后就可以看到一个性能分析小助手的圆形图标。通过它，前端工程师可以快速进入诊断模式，定位一些基础问题，如性能 SDK 初始化失败，采集数据异常，发送的请求参数不正确等问题。</p> <p>但有时候前端工程师在接入时也会遇到帮助文档里也没有提供解决办法的问题。这时怎么办呢？可以借助代码存放的 Gitlab 平台，让前端工程师通过 issue 的方式提交问题，看到问题后我们及时回复解决。如果问题很紧急，也可以通过平台上的联系方式联系开发者，开发者解决完问题后，发布代码并通知前端工程师。</p> <h3 id="sdk-运行设计"><a href="#sdk-运行设计" class="header-anchor">#</a> SDK 运行设计</h3> <p>SDK 如果想运行高效，必须有好的兼容性策略、容错机制和测试方案。</p> <p>所谓兼容性策略，就是性能 SDK 可以在各个业务下都可以稳定运行。</p> <p>我们知道，前端性能优化会面临的业务场景大致有：</p> <p>各类页面，如平台型页面、3C 类页面、中后台页面；</p> <p>一些可视化搭建的平台，如用于搭建天猫双十一会场页这种用于交易运行页面的魔方系统；</p> <p>各个终端，如 PC 端，移动端，小程序端等。</p> <p>这就要求性能 SDK 要能适应这些业务，及时采集性能指标并进行上报。那具体怎么做呢？</p> <p>一般不同页面和终端，它们的技术栈也会不同，如 PC端页面使用 React，移动端页面使用 VUE 。这个时候，我们可以尽可能用原生 JavaScript 去做性能指标的采集，从而实现跨不同技术栈的采集。</p> <p>不同终端方面，我设计了一个适配层来抹平采集方面的差异。具体来说，小程序端可以用有自己的采集 API，如 minaFMP，其他端可以直接用 FMP，这样在性能 SDK 初始化时，根据当前终端类型的不同，去调用各自的性能指标采集 API。</p> <p>容错方面怎么做呢？</p> <p>如果是性能 SDK 自身的报错，可以通过 try catch 的方式捕获到，然后上报异常监控平台。注意，不要因为 SDK 的报错而影响引入性能 SDK 页面的正常运行。</p> <p>除此之外，好的自测和 QA 的测试也是性能 SDK 运行平稳的一大保障。</p> <p>在开发 SDK 时，我们可以根据用户实际的浏览器和机型分布比例，确定 top10% 用户的机型和浏览器类型。然后在每次开发完成并进行代码 review 后，使用这些机型和浏览器类型进行自测。</p> <p>另外，在升级性能 SDK 时，不论功能大小，为了保证不影响到所有业务方线上稳定运行，最好都进行一次冒烟测试用例。</p> <h3 id="上报策略设计"><a href="#上报策略设计" class="header-anchor">#</a> 上报策略设计</h3> <p>上报策略是指在性能指标采集完成后，上报到性能平台所采用的具体策略。比如通过 SDK 上报到性能平台后端，是数据直接上传还是做一些过滤处理，是全量上传数据还是抽样，是选择 H5 接口上报还是 native 接口上报，等等，这些都需要我们确定一下。</p> <h3 id="日志数据过滤"><a href="#日志数据过滤" class="header-anchor">#</a> 日志数据过滤</h3> <p>我的建议是，在采集性能指标之后，最好先对异常数据进行过滤。</p> <p>异常数据分一般有两类，第一类是计算错误导致的异常数据，比如负值或者非数值数据，第二类是合法异常值、极大值、极小值，属于网络断掉或者超时形成的数值，比如 15s 以上的首屏时间。</p> <p>负值的性能指标数据影响很大，它会严重拖低首屏时间，也会把计算逻辑导致负值的问题给掩盖掉。</p> <p>还有首屏时间是非数值数据的时候也非常麻烦，比如首屏时间是 “200”，我这里使用引号是因为它是字符串类型，在采集过程中计算时，遇到加法时，会出现 “200”+30=20030，而不是你预期的 230 的情况。后来遇到负值数据和非数值数据后，我都会用程序打印日志记录，并上报到错误异常平台。</p> <h3 id="数据抽样策略"><a href="#数据抽样策略" class="header-anchor">#</a> 数据抽样策略</h3> <p>性能 SDK 上报数据是全量还是抽象，需要根据本身 App 或者网站的日活来确定，如果日活10万以下，那抽样就没必要了。如果是一款日活千万的 App，那就需要进行数据抽样了，因为如果上报全量日志的话，会耗费大量用户的流量和请求带宽。</p> <p>像 58 同城，我们做的就是 10% 的抽样率，这也有百万级的数据了。除了在 SDK 里面设置抽样策略，业界还有通过服务器端下发数据抽样率的方式，来动态控制客户端向服务器端上报性能数据的量。比如，双十二运营活动当天，日活跃用户激增，抽样率由10%降低到5%，可以大大降低运营活动时统计服务器的负载。</p> <h3 id="上报机制选择"><a href="#上报机制选择" class="header-anchor">#</a> 上报机制选择</h3> <p>一般，为了节省流量，性能 SDK 也会根据网络能力，选择合适的上报机制。在强网环境（如 4G/WIFI），直接进行上报；在弱网（2G/3G）下，将日志存储到本地，延时到强网下再上报。</p> <p>除了网络能力，我们还可以让 SDK 根据 App 忙碌状态，选择合适的上报策略。如果 App 处于空闲状态，直接上报；如果处于忙碌状态，等到闲时（比如凌晨 2-3 点）再进行上报。</p> <p>除此之外，还有一些其他的策略，如批量数据上报，默认消息数量达到 30 条才上报，或者只在 App 启动时上报等策略，等等。你可以根据实际情况进行选择。</p> <p>在上报能力选择方面，由于使用 native 接口上报时，SDK 可以复用客户端的请求连接，采取延时上报或者批量上报等策略。所以虽然我们支持 H5 和 native 两种接口上报方式，但实际工作中建议优先使用 native 接口进行数据上报。</p> <p>在性能指标上报之前，也就是请求指标转换为请求参数环节，SDK 内部最好做一次参数校验处理。</p> <h3 id="小结-3"><a href="#小结-3" class="header-anchor">#</a> 小结</h3> <p><img src="/performance/Indicator_4.png" alt="Indicator_collection"></p></div></div> <!----> <div class="page-edit"><div class="edit-link"><a href="https://github.com/zhouyalongs/zhouyalongs.github.io/edit/master/docs/03.前端延展/02.性能优化/02.指标采集.md" target="_blank" rel="noopener noreferrer">编辑</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="tags"><a href="/Bloging/tags/?tag=%E6%8C%87%E6%A0%87%E9%87%87%E9%9B%86" title="标签">#指标采集</a></div> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">2022/08/10, 08:19:57</span></div></div> <div class="page-nav-wapper"><div class="page-nav-centre-wrap"><a href="/Bloging/pages/82468b/" class="page-nav-centre page-nav-centre-prev"><div class="tooltip">性能优化概述</div></a> <a href="/Bloging/pages/b2f269/" class="page-nav-centre page-nav-centre-next"><div class="tooltip">搭建平台</div></a></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/Bloging/pages/82468b/" class="prev">性能优化概述</a></span> <span class="next"><a href="/Bloging/pages/b2f269/">搭建平台</a>→
+      </span></p></div></div></div> <div class="article-list"><div class="article-title"><a href="/Bloging/archives/" class="iconfont icon-bi">最近更新</a></div> <div class="article-wrapper"><dl><dd>01</dd> <dt><a href="/Bloging/pages/640b08/"><div>map&amp;set</div></a> <span>01-29</span></dt></dl><dl><dd>02</dd> <dt><a href="/Bloging/pages/87ead3/"><div>方法论</div></a> <span>08-12</span></dt></dl><dl><dd>03</dd> <dt><a href="/Bloging/pages/0adf45/"><div>性能优化体系演进</div></a> <span>08-11</span></dt></dl> <dl><dd></dd> <dt><a href="/Bloging/archives/" class="more">更多文章&gt;</a></dt></dl></div></div></main></div> <!----> <div class="buttons"><div title="返回顶部" class="button blur go-to-top iconfont icon-fanhuidingbu" style="display:none;"></div> <div title="去评论" class="button blur go-to-comment iconfont icon-pinglun" style="display:none;"></div> <div title="主题模式" class="button blur theme-mode-but iconfont icon-zhuti"><ul class="select-box" style="display:none;"><li class="iconfont icon-zidong">跟随系统</li><li class="iconfont icon-rijianmoshi">浅色模式</li><li class="iconfont icon-yejianmoshi">深色模式</li><li class="iconfont icon-yuedu">阅读模式</li></ul></div> <div title="选择主题色" class="button blur theme-mode-but iconfont icon-qiehuan"><ul class="select-box" style="display:none;"><li class="iconfont"><sub class="theme-select-block" style="background-color:#3eaf7c;"></sub> <span>生命绿</span></li><li class="iconfont"><sub class="theme-select-block" style="background-color:#D59C12;"></sub> <span>收获黄</span></li><li class="iconfont"><sub class="theme-select-block" style="background-color:#3498DB;"></sub> <span>天空蓝</span></li><li class="iconfont"><sub class="theme-select-block" style="background-color:#E74C3C;"></sub> <span>激情红</span></li><li class="iconfont"><sub class="theme-select-block" style="background-color:#8e44ad;"></sub> <span>高贵紫</span></li></ul></div></div> <!----> <!----> <!----></div><div class="global-ui"><div></div></div></div>
+    <script src="/Bloging/assets/js/app.2aa6d5b3.js" defer></script><script src="/Bloging/assets/js/3.96531fce.js" defer></script><script src="/Bloging/assets/js/4.8451043b.js" defer></script><script src="/Bloging/assets/js/75.531a778b.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[57],{386:function(t,n,s){"use strict";s.r(n);var e=s(4),r=Object(e.a)({},(function(){var t=this._self._c;return t("ContentSlotsDistributor",{attrs:{"slot-key":this.$parent.slotKey}},[t("p",[t("img",{attrs:{src:"/Vue/brain-family-bucket.jpeg",alt:"全家桶"}})])])}),[],!1,null,null,null);n.default=r.exports}}]);
